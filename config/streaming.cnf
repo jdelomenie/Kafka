@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.data.ISMemDataImpl">
+    <array name="StreamingConfiguration" type="record" depth="1">
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="name">kafka_jd</value>
+        <value name="description">kafka_jd</value>
+        <value name="package">Kafka</value>
+        <value name="type">Kafka</value>
+        <value name="host">http://localhost:29092</value>
+        <value name="clientId">ISe7a1246b53</value>
+        <value name="publishMode">Asynchronous</value>
+        <value name="enabled">true</value>
+        <value name="useSSL">No</value>
+        <value name="truststoreAlias"></value>
+        <value name="keystoreAlias"></value>
+        <null name="keystoreKeyAlias"/>
+        <array name="subjects" type="record" depth="1">
+          <record javaclass="com.wm.data.ISMemDataImpl">
+            <value name="referenceId">messages</value>
+            <value name="topicName">messages</value>
+            <record name="keyCoder" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="type">STRING</value>
+              <value name="type_display">String</value>
+              <record name="parameters" javaclass="com.wm.data.ISMemDataImpl">
+                <array name="nameValue" type="record" depth="1">
+                  <record javaclass="com.wm.data.ISMemDataImpl">
+                    <value name="name">charsetName</value>
+                    <value name="value">UTF-8</value>
+                  </record>
+                </array>
+              </record>
+              <value name="charsetName">UTF-8</value>
+            </record>
+            <record name="valueCoder" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="type">STRING</value>
+              <value name="type_display">String</value>
+              <record name="parameters" javaclass="com.wm.data.ISMemDataImpl">
+                <array name="nameValue" type="record" depth="1">
+                  <record javaclass="com.wm.data.ISMemDataImpl">
+                    <value name="name">charsetName</value>
+                    <value name="value">UTF-8</value>
+                  </record>
+                </array>
+              </record>
+              <value name="charsetName">UTF-8</value>
+            </record>
+            <value name="aliasName">kafka_jd</value>
+          </record>
+        </array>
+      </record>
+    </array>
+  </record>
+</IDataXMLCoder>
